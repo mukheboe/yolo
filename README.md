@@ -21,3 +21,20 @@ Make sure that you have the following installed:
  `npm start`
 
  ### Go ahead a nd add a product (note that the price field only takes a numeric input)
+
+ ##dockerfile and docker-compose file are in client folder
+
+ ## link to dockerhub with images
+ https://hub.docker.com/repository/docker/mukheboe/ip2backend-docker/general
+
+ ## local images 
+ <none>                       <none>      72df357ed822   28 hours ago   626MB
+ip2/ip2backend-docker        v1.0.0      5fe0dbb462b3   4 days ago     214MB
+ip2/ip2backend-docker        v1.1.0      5fe0dbb462b3   4 days ago     214MB
+ip2backend-docker            latest      5fe0dbb462b3   4 days ago     214MB
+ip2backend-docker            v1.0.0      5fe0dbb462b3   4 days ago     214MB
+ip2backend-docker            v1.1.0      5fe0dbb462b3   4 days ago     214MB
+mukheboe/ip2backend-docker   latest      5fe0dbb462b3   4 days ago     214MB
+mukheboe/ip2backend-docker   v1.0.0      5fe0dbb462b3   4 days ago     214MB
+mukheboe/ip2backend-docker   v1.1.0      5fe0dbb462b3   4 days ago     214MB
+ 
