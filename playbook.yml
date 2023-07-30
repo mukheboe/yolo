@@ -1,14 +1,14 @@
 ---
-- name: Apache server installed
+- name: ip3 Ansible playbook
   hosts: all
   become: yes
   tasks:
-  - name: latest Apache version installed
-    ansible.builtin.yum:
-      name: httpd
-      state: latest
-  - name: Apache enabled and running
-    ansible.builtin.service:
-      name: httpd
-      enabled: true
-      state: started
+    - name: ensure ntpd is at the latest version
+      apt: pkg=ntp state=latest update_cache=yes
+      become: yes
+      notify:
+      - restart ntpd
+  handlers:
+    - name: restart ntpd
+      service: name=ntpd state=restarted
+      become: yes

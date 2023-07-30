@@ -1,0 +1,3 @@
+# vars.yml
+frontend_port: 80
+web_app_image: my_web_app:latest

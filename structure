@@ -1,0 +1,19 @@
+my_ip3_project/
+├── inventory/
+│   └── hosts
+├── roles/
+│   ├── web_server/
+│   │   ├── tasks/
+│   │   │   └── main.yml
+│   │   ├── files/
+│   │   ├── templates/
+│   │   ├── vars/
+│   │   └── meta/
+│   └── database_server/
+│       ├── tasks/
+│       │   └── main.yml
+│       ├── files/
+│       ├── templates/
+│       ├── vars/
+│       └── meta/
+└── main.yml
