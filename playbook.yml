@@ -1,9 +1,14 @@
 ---
-- name: My first Ansible playbook
+- name: Apache server installed
   hosts: all
   become: yes
   tasks:
-  - name: Ensure NTP (for time synchronization) is installed.
-    yum: name=ntp state=present
-  - name: Ensure NTP is running.
-    service: name=ntpd state=started enabled=yes
+  - name: latest Apache version installed
+    ansible.builtin.yum:
+      name: httpd
+      state: latest
+  - name: Apache enabled and running
+    ansible.builtin.service:
+      name: httpd
+      enabled: true
+      state: started
