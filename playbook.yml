@@ -1,6 +1,6 @@
 ---
 - name: ip3 Ansible playbook
-  hosts: ip3
+  hosts: all
   become: yes
   tasks:
     - name: ensure ntpd is at the latest version
@@ -18,3 +18,9 @@
        name: ip2backend-docker
        image: ip2backend-docker
        state: started 
+
+    - name: Ensure docker is started
+      become: yes
+      ansible.builtin.systemd:
+        service: docker
+        state: started
