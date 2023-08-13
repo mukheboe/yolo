@@ -12,7 +12,7 @@ Address 1: 10.96.0.10 kube-dns.kube-system.svc.cluster.local
 Name:      web-0.nginx
 Address 1: 10.244.0.11 web-0.nginx.default.svc.cluster.local
 
-# application is scaled up 5 times
+# application is scaled up 5 times and persisted
 NAME        STATUS   VOLUME                                     CAPACITY   ACCESS MODES   STORAGECLASS   AGE
 www-web-0   Bound    pvc-371a5b13-5e0c-4a98-a745-19ba913415c0   1Gi        RWO            standard       40m
 www-web-1   Bound    pvc-9d522000-dbf9-4752-9ea1-e36ea3f83ef7   1Gi        RWO            standard       38m
