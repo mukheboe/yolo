@@ -3,8 +3,9 @@ kind: Services
 metadata:
   name: static-services
   annotations:
-    labels:
-      app: static-site
+    service.beta.kubernetis.io/load-balancer-throttle: "4"
+  labels:
+    app: static-site
 spec:
   type: LoadBalancer
   ports:
