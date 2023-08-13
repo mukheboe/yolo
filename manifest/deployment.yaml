@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: deployment
+  labels:
+    app: static-site
+spec:
+  replicas: 5
+  selector:
+    matchlabels:
+      app: static-site
+  teplate:
+    metatdata:
+      labels:
+        app: static-site
+    spec:
+      containers:
+      - name: static-site
+        image: mukheboe/nginx-final:v1.0.1
+        imagePullPolicy: Always
+        ports:
+        - containerPort: 80
