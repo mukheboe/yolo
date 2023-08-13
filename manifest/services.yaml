@@ -1,0 +1,17 @@
+apiVersion: v1
+kind: Services
+metadata:
+  name: static-services
+  annotations:
+    labels:
+      app: static-site
+spec:
+  type: LoadBalancer
+  ports:
+  - name: http
+    ports: 80
+    protocol: TCP
+    targetPort: 80
+  selector:
+    app: static-site
+  sessionAffinity: None
