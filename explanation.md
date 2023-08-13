@@ -24,3 +24,6 @@ www-web-4   Bound    pvc-a06e510c-6f11-4d27-8105-df2a4f12e6b4   1Gi        RWO  
 ![Alt text](<Screenshot from 2023-08-13 10-39-47.png>)
 
 ![Alt text](<Screenshot from 2023-08-13 10-59-30.png>)
+
+# Link to external site
+static-service   LoadBalancer   10.72.13.73   35.232.85.144    80:30945/TCP     67s
