@@ -19,3 +19,7 @@ www-web-1   Bound    pvc-9d522000-dbf9-4752-9ea1-e36ea3f83ef7   1Gi        RWO  
 www-web-2   Bound    pvc-4be0907a-5abd-40df-97d0-ddcb13f2bf19   1Gi        RWO            standard       3m17s
 www-web-3   Bound    pvc-efa057b5-d8ba-4446-af3d-554b1eb51383   1Gi        RWO            standard       3m14s
 www-web-4   Bound    pvc-a06e510c-6f11-4d27-8105-df2a4f12e6b4   1Gi        RWO            standard       3m11s
+
+# Docker image used
+![Alt text](<Screenshot from 2023-08-13 10-39-47.png>)
+
