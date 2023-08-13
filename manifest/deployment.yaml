@@ -7,10 +7,10 @@ metadata:
 spec:
   replicas: 5
   selector:
-    matchlabels:
+    matchLabels:
       app: static-site
-  teplate:
-    metatdata:
+  template:
+    metadata:
       labels:
         app: static-site
     spec:
@@ -20,3 +20,5 @@ spec:
         imagePullPolicy: Always
         ports:
         - containerPort: 80
+
+
